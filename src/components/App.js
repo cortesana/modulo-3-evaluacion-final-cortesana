@@ -8,10 +8,12 @@ import CharacterList from './CharacterList';
 import CharacterCard from './CharacterCard';
 import CharacterDetails from './CharacterDetails';
 
-function App() {
-  return (
-    <Header/>
-  );
+class App extends React.Component {
+  render() {
+    return(
+      <Header/>
+    );
+  }
 }
 
 export default App;

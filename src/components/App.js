@@ -1,6 +1,9 @@
 import React from 'react';
-import logo from '../images/logo.svg';
+import logo from '../images/logo.png';
 import '../stylesheets/App.scss';
+import CharacterList from './CharacterList';
+import CharacterCard from './CharacterCard';
+import CharacterDetails from './CharacterDetails';
 
 function App() {
   return (

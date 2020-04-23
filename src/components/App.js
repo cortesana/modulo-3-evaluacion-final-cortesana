@@ -12,14 +12,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       characterData: [],
-      inputValue: ''
+      inputvalue: ''
     };
     this.getInputValue = this.getInputValue.bind(this);
   }
   
-  getInputValue(inputValue) {
+  getInputValue(inputvalue) {
     this.setState({
-      inputValue: inputValue
+      inputvalue: inputvalue
     })
   }
 
@@ -33,7 +33,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {characterData, inputValue} = this.state;
+    const {characterData, inputvalue} = this.state;
     return(
       <div className="App">
         <Header/>
@@ -41,11 +41,11 @@ class App extends React.Component {
           <Route>
             <SearchBar
             getInputValue = {this.getInputValue}
-            inputValue = {inputValue}
+            inputvalue = {inputvalue}
             />
             <CharacterList
             characterData = {characterData}
-            inputValue = {inputValue}
+            inputvalue = {inputvalue}
             />
           </Route>
           <Route>

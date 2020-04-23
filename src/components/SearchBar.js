@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 function SearchBar(props) {
-    const {inputValue} = props;
+    const {inputvalue} = props;
     const getInputValue = evt => {
-        props.getInputValue(evt.target.inputValue)
+        props.getInputValue(evt.target.inputvalue)
     }
     const onSubmitHandler = evt => {
         evt.preventDefault()
@@ -12,7 +12,7 @@ function SearchBar(props) {
     return(
         <form onSubmit={onSubmitHandler}>
             <label>
-                <input type="text" placeholder="Morty Smith" onChange={getInputValue} inputValue={inputValue}
+                <input type="text" placeholder="Morty Smith" onChange={getInputValue} value={inputvalue}
                 name="character name" />
             </label>
         </form>
@@ -20,7 +20,7 @@ function SearchBar(props) {
 }
 
 SearchBar.propTypes = {
-    inputValue: PropTypes.string.isRequired
+    inputvalue: PropTypes.string.isRequired
 }
 
 export default SearchBar;

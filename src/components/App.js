@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/logo.png';
 import '../stylesheets/App.scss';
 import {fetchData} from '../services/dataAPI';
 import Header from './Header';
@@ -12,9 +11,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      characterData: []
-      /* inputValue: ''*/
-    }
+      characterData: [],
+      inputValue: ''
+    };
+    this.getInputValue = this.getInputValue.bind(this);
+  }
+  
+  getInputValue(inputValue) {
+    this.setState({
+      inputValue: inputValue
+    })
   }
 
   componentDidMount() {
@@ -27,15 +33,20 @@ class App extends React.Component {
   }
 
   render() {
-    const {characterData} = this.state;
+    const {characterData, inputValue} = this.state;
     return(
       <div className="App">
         <Header/>
         <Switch>
           <Route>
-            {/* <SearchBar/> */}
+            <SearchBar
+            getInputValue = {this.getInputValue}
+            inputValue = {inputValue}
+            />
             <CharacterList
-            characterData = {characterData} />
+            characterData = {characterData}
+            inputValue = {inputValue}
+            />
           </Route>
           <Route>
             {/* CharacterDetails */}

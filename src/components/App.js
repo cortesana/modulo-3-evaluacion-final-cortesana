@@ -15,12 +15,20 @@ class App extends React.Component {
       value: ''
     };
     this.getInputValue = this.getInputValue.bind(this);
+    this.renderCharacterDetails = this.renderCharacterDetails.bind(this);
   }
   
   getInputValue(value) {
     this.setState({
       value: value
     })
+  }
+
+  renderCharacterDetails(props) {
+    const id = props.match.params.id;
+    const character = this.state.characterData.find(character =>
+    character.id === parseInt(id));
+    return <CharacterDetails character={character} />
   }
 
   componentDidMount() {
@@ -38,7 +46,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Switch>
-          <Route>
+          <Route path="/" exact>
             <SearchBar
             getInputValue = {this.getInputValue}
             value = {value}
@@ -48,8 +56,9 @@ class App extends React.Component {
             value = {value}
             />
           </Route>
-          <Route>
-            {/* CharacterDetails */}
+          <Route
+            path="/character/:id" 
+            render={this.renderCharacterDetails}>
           </Route>
         </Switch>
       </div>

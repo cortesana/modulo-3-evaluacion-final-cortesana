@@ -11,10 +11,8 @@ function SearchBar(props) {
     }
     return(
         <form onSubmit={onSubmitHandler}>
-            <label>
-                <input type="text" placeholder="Morty Smith" onChange={getInputValue} value={value}
-                name="character name" />
-            </label>
+            <label></label>
+            <input type="text" placeholder="Morty Smith" onChange={getInputValue} value={value} name="character name" />
         </form>
     )
 }

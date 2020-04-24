@@ -11,10 +11,13 @@
         align-items: center;
         margin: 10px;
         @include forTablet {
-            margin: 85px;
+            margin: 80px;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+        }
+        @include forPc {
+            margin: 120px;
         }
         .Details-text-ctn {
             display: flex;

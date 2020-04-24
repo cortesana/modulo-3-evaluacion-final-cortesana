@@ -17,5 +17,8 @@
             padding: 20px;
             margin: 30px;
         }
+        @include forPc {
+            line-height: 1;
+        }
     }
 }

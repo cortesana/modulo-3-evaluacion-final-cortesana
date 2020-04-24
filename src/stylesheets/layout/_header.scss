@@ -8,11 +8,17 @@
         @include forTablet {
             height: 400px;
         }
+        @include forPc {
+            height: 600px;
+        }
         .Header-logo-ctn {
             margin: 20px;
             height: 50%;
             @include forTablet {
                 margin: 30px;
+            }
+            @include forPc {
+                margin: 0px;
             }
             .Header-logo {
                 position: relative;

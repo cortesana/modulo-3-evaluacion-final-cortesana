@@ -4,14 +4,17 @@
         margin: 37px;
         color: $mainColor;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .Details-ctn {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 10px;
         @include forTablet {
-            margin: 80px;
+            width: 800px;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;

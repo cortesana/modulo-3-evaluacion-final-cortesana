@@ -7,6 +7,9 @@
     align-items: center;
     padding: 0px;
     text-decoration: none;
+    @include forPc {
+        margin: 80px;
+    }
     .character {
         list-style: none;
         .CharacterCard-ctn {

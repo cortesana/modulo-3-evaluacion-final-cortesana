@@ -9,7 +9,7 @@ function CharacterDetails(props) {
             <Link className="Details-link" to="/">Go back</Link>
             <div className="Details-ctn">
                 <img alt={name} src={image}/>
-                <h3>{name}</h3>
+                <h3><span className="Details-text">{name}</span></h3>
                 <p><span className="Details-text">Status:</span> {status}</p>
                 <p><span className="Details-text">Species:</span> {species}</p>
                 <p><span className="Details-text">Origin:</span> {origin.name}</p>

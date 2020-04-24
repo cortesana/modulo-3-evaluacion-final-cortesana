@@ -11,7 +11,7 @@ function CharacterList(props) {
                 .filter(character => value === '' || character.name.toLowerCase()
                 .includes(value.toLowerCase()))
                 .map((character) => <li className="character" key={character.id}>
-                    <Link to={`/character/${character.id}`}>
+                    <Link className="ListLink" to={`/character/${character.id}`}>
                         <CharacterCard
                             characterImage = {character.image}
                             characterName = {character.name}

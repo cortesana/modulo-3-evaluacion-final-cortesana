@@ -6,8 +6,10 @@ function CharacterCard(props) {
     return(
         <div className="CharacterCard-ctn">
             <img alt={characterName} src={characterImage}/>
-            <h3 className="card-text">{characterName}</h3>
-            <p className="card-text">{characterSpecies}</p>
+            <div className="Card-text">
+                <h3>{characterName}</h3>
+                <p>{characterSpecies}</p>
+            </div>
         </div>
     );
 }

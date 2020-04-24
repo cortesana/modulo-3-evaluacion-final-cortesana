@@ -1,16 +1,17 @@
 .Header-ctn {
     .Header {
-        background-color: black;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         .Header-logo-ctn {
-            height: 100px;
+            margin: 20px;
+            height: 50%;
             .Header-logo {
                 position: relative;
                 height: 100%;
             }
         }
     }
-} 
+}

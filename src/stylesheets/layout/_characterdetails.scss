@@ -1,18 +1,18 @@
 .CharacterDetails-ctn {
-    background-color: black;
-    color: rgb(44, 206, 192);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: yellow;
     .Details-link {
-        margin: 10px;
-        color: white;
+        margin: 37px;
+        color: yellow;
     }
     .Details-ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
         .Details-text {
+            font-weight: 700;
             text-transform: uppercase;
-            font-weight: 600;
         }
         
     }

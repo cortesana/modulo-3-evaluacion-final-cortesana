@@ -1,20 +1,30 @@
 .CharacterList {
     margin: 0px;
-    background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 0px;
+    text-decoration: none;
     .character {
         list-style: none;
         .CharacterCard-ctn {
+            margin: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: rgb(44, 206, 192);
+            color: yellow;
+            .Card-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3, p {
+                    margin: 10px;
+                }
+            }
         }
     }
 }

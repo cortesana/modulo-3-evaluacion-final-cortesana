@@ -28,6 +28,7 @@ class App extends React.Component {
     const id = props.match.params.id;
     const character = this.state.characterData.find(character =>
     character.id === parseInt(id));
+    console.log(character);
     return <CharacterDetails character={character} />
   }
 

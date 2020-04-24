@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 function CharacterDetails(props) {
-    console.log(props);
     const {image, name, status, species, origin, episode} = props.character; //CHARACTER UNDEFINED
     return(
         <section className="CharacterDetails-ctn">

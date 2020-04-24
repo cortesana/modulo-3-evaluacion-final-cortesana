@@ -26,10 +26,12 @@ class App extends React.Component {
 
   renderCharacterDetails(props) {
     const id = props.match.params.id;
-    const character = this.state.characterData.find(character =>
-    character.id === parseInt(id));
-    console.log(character);
-    return <CharacterDetails character={character} />
+    const characters = this.state.characterData;
+    for(let character of characters) {
+      if(character.id === parseInt(id)) {
+        return <CharacterDetails character={character} />
+      }
+    }
   }
 
   componentDidMount() {

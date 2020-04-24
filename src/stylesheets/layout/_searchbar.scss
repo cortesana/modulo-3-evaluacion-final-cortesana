@@ -1,0 +1,12 @@
+.Searchbar {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Searchbar-input {
+        margin: 10%;
+        border: solid 2px rgb(44, 206, 192);
+        background-color: black;
+    }
+}

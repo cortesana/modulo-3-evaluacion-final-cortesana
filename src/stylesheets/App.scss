@@ -1,2 +1,7 @@
-@import 'base/reset.scss';
+@import 'base/reset';
+@import 'layout/header';
+@import 'layout/searchbar';
+@import 'layout/characterlist';
+@import 'layout/charactercard';
+@import 'layout/characterdetails';
 @import 'layout/main';

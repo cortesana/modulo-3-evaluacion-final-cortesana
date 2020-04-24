@@ -10,9 +10,8 @@ function SearchBar(props) {
         evt.preventDefault()
     }
     return(
-        <form onSubmit={onSubmitHandler}>
-            <label></label>
-            <input type="text" placeholder="Morty Smith" onChange={getInputValue} value={value} name="character name" />
+        <form className="Searchbar" onSubmit={onSubmitHandler}>
+            <input className="Searchbar-input" type="text" placeholder="Search" onChange={getInputValue} value={value} name="character name" />
         </form>
     )
 }

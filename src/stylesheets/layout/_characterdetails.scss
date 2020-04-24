@@ -1,0 +1,19 @@
+.CharacterDetails-ctn {
+    background-color: black;
+    color: rgb(44, 206, 192);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Details-link {
+        margin: 10px;
+        color: white;
+    }
+    .Details-ctn {
+        .Details-text {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+    }
+}

@@ -6,14 +6,14 @@ function CharacterDetails(props) {
     const {image, name, status, species, origin, episode} = props.character;
     return(
         <section className="CharacterDetails-ctn">
-            <Link to="/">Go back</Link>
+            <Link className="Details-link" to="/">Go back</Link>
             <div className="Details-ctn">
                 <img alt={name} src={image}/>
                 <h3>{name}</h3>
-                <p><span>Status:</span> {status}</p>
-                <p><span>Species:</span> {species}</p>
-                <p><span>Origin:</span> {origin.name}</p>
-                <p><span>Episodes:</span> {episode.length}</p>
+                <p><span className="Details-text">Status:</span> {status}</p>
+                <p><span className="Details-text">Species:</span> {species}</p>
+                <p><span className="Details-text">Origin:</span> {origin.name}</p>
+                <p><span className="Details-text">Episodes:</span> {episode.length}</p>
             </div>
         </section>
     );

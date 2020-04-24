@@ -5,9 +5,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include forTablet {
+            height: 400px;
+        }
         .Header-logo-ctn {
             margin: 20px;
             height: 50%;
+            @include forTablet {
+                margin: 30px;
+            }
             .Header-logo {
                 position: relative;
                 height: 100%;

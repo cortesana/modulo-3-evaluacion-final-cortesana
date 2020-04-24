@@ -5,12 +5,12 @@ body {
     font-size: 16px;
     font-family: 'Play', sans-serif;
     background-color: rgb(58, 57, 57);
-    color: yellow;
 }
 @import 'base/reset';
+@import 'utils/variables';
+@import 'utils/mixins';
 @import 'layout/main';
 @import 'layout/header';
 @import 'layout/searchbar';
 @import 'layout/characterlist';
-@import 'layout/charactercard';
 @import 'layout/characterdetails';

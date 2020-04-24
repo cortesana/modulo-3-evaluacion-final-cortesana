@@ -4,10 +4,18 @@
     justify-content: center;
     align-items: center;
     .Searchbar-input {
-        margin: 10%;
+        margin: 20px;
         background-color: black;
         border: rgb(58, 57, 57);
         box-shadow: 1px 1px 7px black;
         line-height: 1.75;
+        padding: 10px;
+        color: rgb(168, 165, 165);
+        @include forTablet {
+            line-height: 1;
+            width: 40%;
+            padding: 20px;
+            margin: 30px;
+        }
     }
 }

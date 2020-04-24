@@ -11,7 +11,7 @@ function SearchBar(props) {
     }
     return(
         <form className="Searchbar" onSubmit={onSubmitHandler}>
-            <input className="Searchbar-input" type="text" placeholder="  Search" onChange={getInputValue} value={value} name="character name" />
+            <input className="Searchbar-input" type="text" placeholder="Search" onChange={getInputValue} value={value} name="character name" />
         </form>
     )
 }

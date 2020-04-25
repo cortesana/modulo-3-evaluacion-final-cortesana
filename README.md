@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Final Exam AdaLab
+
+> Choose your favourite Rick and Morty characters and learn more about them!
+
+This project is a **Responsive webpage**, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+**If you want to learn more about the project, check out the pdf file available in the repository.**
 
 ## Available Scripts
 

@@ -10,6 +10,14 @@ function CharacterList(props) {
             {characterData
                 .filter(character => value === '' || character.name.toLowerCase()
                 .includes(value.toLowerCase()))
+                .sort((i, j) => {
+                    if (i.name < j.name) {
+                        return -1;
+                    } else if (i.name > j.name) {
+                        return 1;
+                    }
+                    return 0;
+                })
                 .map((character) => <li className="character" key={character.id}>
                     <Link className="ListLink" to={`/character/${character.id}`}>
                         <CharacterCard

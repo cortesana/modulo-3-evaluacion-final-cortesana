@@ -5,6 +5,13 @@ import PropTypes from 'prop-types';
 
 function CharacterList(props) {
     const {characterData, value} = props;
+    if ((characterData
+        .filter(character => value === '' || character.name.toLowerCase()
+        .includes(value.toLowerCase()))).length === 0) {
+            return(
+                <h2 className="Error-manager">Sorry, no results found for {props.value} </h2>
+            )
+        }
     return(
         <ul className="CharacterList">
             {characterData
